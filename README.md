@@ -1,12 +1,17 @@
-#Java Project
+#Java Automation Project
+##Base point for java Automation projects
 
-*Project for creating Java applications which do coomon tasks.*
+*Project for creating automation test using Selenium webDriver and TestNG.*
 
 **Java 7**
 
 * Maven
 * Log4j
 * Junit
+* Selenium WebDriver
+* Apache POI
+* JDBC
+* MySQL
 
 Java Project for SQA Boot Camp October 3.
 
