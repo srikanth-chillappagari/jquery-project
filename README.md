@@ -1,6 +1,6 @@
-#Java Project
+#Java Core App Project
 
-*Project for creating Java applications which do coomon tasks.*
+*Project for creating Java applications using public static void method.*
 
 **Java 7**
 
