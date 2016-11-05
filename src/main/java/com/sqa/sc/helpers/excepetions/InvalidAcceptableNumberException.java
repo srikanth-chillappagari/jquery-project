@@ -1,5 +1,5 @@
 /**
- *   File Name: InvalidAcceptableWordException.java<br>
+ *   File Name: InvalidAcceptableNumberException.java<br>
  *
  *   Chillappagari, Srikanth<br>
  *   Java Boot Camp Exercise<br>
@@ -8,11 +8,11 @@
  *   
  */
 
-package com.sqa.sc.helpers;
+package com.sqa.sc.helpers.excepetions;
 
 
 /**
- * InvalidAcceptableWordException //ADDD (description of class)
+ * InvalidAcceptableNumberException //ADDD (description of class)
  * <p>
  * //ADDD (description of core fields)
  * <p>
@@ -23,5 +23,5 @@ package com.sqa.sc.helpers;
  * @since       1.0
  *
  */
-public class InvalidAcceptableWordException extends Exception {
+public class InvalidAcceptableNumberException extends Exception {
 }
