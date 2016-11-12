@@ -1,6 +1,6 @@
 /**
  * File Name: AutoBasics.java<br>
- * Chillappagari, Srikanth<br>
+ * LastName, FirstName<br>
  * Java Boot Camp Exercise<br>
  * Instructor: Jean-francois Nepton<br>
  * Created: Nov 2, 2016
@@ -21,7 +21,7 @@ import org.openqa.selenium.*;
  * <p>
  * //ADDD (description of core methods)
  *
- * @author Chillappagari, Srikanth
+ * @author LastName, FirstName
  * @version 1.0.0
  * @since 1.0
  */
@@ -32,10 +32,6 @@ public class AutoBasics {
 	public static final String DEFAULT_SCREENSHOT_SAVE_LOCATION = "screenshots/";
 
 	public static final String FILE_EXTENSION = ".jpg";
-
-	public static List<WebElement> getBlueTextFromPage(WebDriver driver, By locator) {
-		return getCSSPropertyBasedElements(driver, locator, "color", "#136cb2");
-	}
 
 	public static List<WebElement> getByTagName(WebDriver driver, String tagName) {
 		List<WebElement> elements = driver.findElements(By.tagName(tagName));
@@ -67,31 +63,31 @@ public class AutoBasics {
 
 	public static List<String> getTextContents(WebDriver driver, By locator) {
 		List<WebElement> elements = driver.findElements(locator);
-		List<String> elementsTexts = new ArrayList<String>();
+		List<String> elementTexts = new ArrayList<String>();
 		for (int i = 0; i < elements.size(); i++) {
 			String text = elements.get(i).getText();
 			if (!text.equals("")) {
-				elementsTexts.add(text);
+				elementTexts.add(text);
 			}
 		}
-		return elementsTexts;
+		return elementTexts;
 	}
 
-	public static boolean takeScreenshots(WebDriver driver) {
-		return takeScreenshots(driver, DEFAULT_SCREENSHOT_FILENAME, DEFAULT_SCREENSHOT_SAVE_LOCATION, null);
+	public static boolean takeScreenshot(WebDriver driver) {
+		return takeScreenshot(driver, DEFAULT_SCREENSHOT_SAVE_LOCATION, DEFAULT_SCREENSHOT_FILENAME, null);
 	}
 
-	public static boolean takeScreenshots(WebDriver driver, String location, String filename) {
-		return takeScreenshots(driver, location, filename, null);
+	public static boolean takeScreenshot(WebDriver driver, String location, String filename) {
+		return takeScreenshot(driver, location, filename, null);
 	}
 
-	public static boolean takeScreenshots(WebDriver driver, String location, String filename, Logger log) {
+	public static boolean takeScreenshot(WebDriver driver, String location, String filename, Logger logger) {
 		File srcFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		try {
 			FileUtils.copyFile(srcFile, new File(location + filename + FILE_EXTENSION));
-		} catch (Exception e) {
-			if (log != null) {
-				log.error("failed to save screenshot at " + location + filename + FILE_EXTENSION);
+		} catch (IOException e) {
+			if (logger != null) {
+				logger.error("Failed to save screenshot at " + location + filename + FILE_EXTENSION);
 			}
 			return false;
 		}

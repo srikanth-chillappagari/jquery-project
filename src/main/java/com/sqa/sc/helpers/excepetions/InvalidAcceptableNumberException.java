@@ -1,7 +1,7 @@
 /**
  *   File Name: InvalidAcceptableNumberException.java<br>
  *
- *   Chillappagari, Srikanth<br>
+ *   LastName, FirstName<br>
  *   Java Boot Camp Exercise<br>
  *   Instructor: Jean-francois Nepton<br>
  *   Created: Oct 10, 2016
@@ -18,7 +18,7 @@ package com.sqa.sc.helpers.excepetions;
  * <p>
  * //ADDD (description of core methods)
  * 
- * @author      Chillappagari, Srikanth
+ * @author      LastName, FirstName
  * @version     1.0.0
  * @since       1.0
  *

@@ -1,15 +1,11 @@
 /**
- *   File Name: InvalidAcceptableWordException.java<br>
- *
- *   Chillappagari, Srikanth<br>
- *   Java Boot Camp Exercise<br>
- *   Instructor: Jean-francois Nepton<br>
- *   Created: Oct 10, 2016
- *   
+ * File Name: InvalidAcceptableWordException.java<br>
+ * LastName, FirstName<br>
+ * Java Boot Camp Exercise<br>
+ * Instructor: Jean-francois Nepton<br>
+ * Created: Oct 10, 2016
  */
-
 package com.sqa.sc.helpers.excepetions;
-
 
 /**
  * InvalidAcceptableWordException //ADDD (description of class)
@@ -18,10 +14,9 @@ package com.sqa.sc.helpers.excepetions;
  * <p>
  * //ADDD (description of core methods)
  * 
- * @author      Chillappagari, Srikanth
- * @version     1.0.0
- * @since       1.0
- *
+ * @author LastName, FirstName
+ * @version 1.0.0
+ * @since 1.0
  */
 public class InvalidAcceptableWordException extends Exception {
 }
